@@ -21,3 +21,52 @@ h6 {
 p {
   margin: 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  
+  background-color: black;
+}
+
+#me {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: reverse flex-start;
+  align-content: center;
+  margin: 10px 0px 10px 10px;
+}
+
+#me h1 {
+  font-size: 70px;
+  padding-left: 20px;
+  color: white;
+}
+
+#avatar {
+  border-radius: 70%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#avatar img {
+  height: 120px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation {
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.navigation {
+  text-decoration: none;
+}
+
