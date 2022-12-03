@@ -128,8 +128,9 @@ nav {
 
 #aboutTitle {
   grid-area: aboutTitle;
+  margin: 10px;
   padding: 20px;
-  border-right: 3px solid white;
+  border-right: 10px solid white;
   display: flex;
   justify-content: flex-end;
 
@@ -138,21 +139,118 @@ nav {
 
 #aboutText {
   grid-area: aboutText;
+  margin: 10px;
   padding: 20px;
+  color: white;
 
   background-color: orange;
 
 }
 
+/* Work section styles */
+
 #work {
   grid-area: work;
-  
+    
   background-color: yellow;
+
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr;
+  grid-template-rows: 50% 1fr 1fr;
+  grid-template-areas: 
+    "workTitle project1 project1"
+    "workTitle project2 project3"
+    "workTitle project4 project5"
 }
+
+#workTitle {
+  grid-area: workTitle;
+  margin: 10px;
+  padding: 20px;
+  border-right: 10px solid white;
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: pink;
+}
+
+#project1 {
+  grid-area: project1;
+  margin: 10px;
+
+  background-color: purple;
+}
+
+#project2 {
+  grid-area: project2;
+  margin: 10px;
+
+  background-color: magenta;
+}
+
+#project3 {
+  grid-area: project3;
+  margin: 10px;
+
+  background-color: aqua;
+}
+
+#project4 {
+  grid-area: project4;
+  margin: 10px;
+
+  background-color: brown;
+}
+
+#project5 {
+  grid-area: project5;
+  margin: 10px;
+
+  background-color: azure;
+}
+
+/* Contact Me section styles */
 
 #contactMe {
   grid-area: contactMe;
   
   background-color: blue;
+
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "contactTitle contact1 contact2 contact3"
 }
 
+#contactTitle {
+  grid-area: contactTitle;
+  margin: 10px;
+  padding: 20px;
+  border-right: 10px solid white;
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: bisque;
+}
+
+#contact1 {
+  grid-area: contact1;
+  margin: 10px;
+
+  background-color: blueviolet;
+}
+
+#contact2 {
+  grid-area: contact2;
+  margin: 10px;
+
+  background-color: cadetblue;
+}
+
+#contact3 {
+  grid-area: contact3;
+  margin: 10px;
+
+  background-color: cornflowerblue;
+}
