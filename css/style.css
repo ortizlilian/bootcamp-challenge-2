@@ -112,17 +112,47 @@ nav {
   ;
 }
 
+/* About Me section styles */
+
 #aboutMe {
   grid-area: aboutMe;
+  
   background-color: red;
+  
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "aboutTitle aboutText"
+}
+
+#aboutTitle {
+  grid-area: aboutTitle;
+  padding: 20px;
+  border-right: 3px solid white;
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: green;
+}
+
+#aboutText {
+  grid-area: aboutText;
+  padding: 20px;
+
+  background-color: orange;
+
 }
 
 #work {
   grid-area: work;
+  
   background-color: yellow;
 }
 
 #contactMe {
   grid-area: contactMe;
+  
   background-color: blue;
 }
+
