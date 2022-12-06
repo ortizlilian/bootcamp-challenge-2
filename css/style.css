@@ -112,13 +112,14 @@ nav {
   ;
 }
 
+.titlesection {
+  font-size: 40px;
+}
+
 /* About Me section styles */
 
 #aboutMe {
   grid-area: aboutMe;
-  
-  /* background-color: red; */
-  
   display: grid;
   grid-template-columns: 25% 1fr;
   grid-template-rows: 1fr;
@@ -132,9 +133,7 @@ nav {
   padding: 20px;
   border-right: 10px solid white;
   display: flex;
-  justify-content: flex-end;
-
-  /* background-color: green; */
+  justify-content: flex-end
 }
 
 #aboutText {
@@ -142,9 +141,7 @@ nav {
   margin: 10px;
   padding: 20px;
   color: white;
-
-  /* background-color: orange; */
-
+  
 }
 
 /* Work section styles */
@@ -166,9 +163,7 @@ nav {
   padding: 20px;
   border-right: 10px solid white;
   display: flex;
-  justify-content: flex-end;
-
-  /* background-color: pink; */
+  justify-content: flex-end
 }
 
 #project1 {
@@ -238,9 +233,6 @@ nav {
 
 #contactMe {
   grid-area: contactMe;
-  
-  background-color: blue;
-
   display: grid;
   grid-template-columns: 25% 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -254,28 +246,96 @@ nav {
   padding: 20px;
   border-right: 10px solid white;
   display: flex;
-  justify-content: flex-end;
-
-  background-color: bisque;
+  justify-content: flex-end
 }
 
 #contact1 {
   grid-area: contact1;
-  margin: 10px;
-
-  background-color: blueviolet;
 }
 
 #contact2 {
   grid-area: contact2;
-  margin: 10px;
-
-  background-color: cadetblue;
 }
 
 #contact3 {
   grid-area: contact3;
-  margin: 10px;
+}
 
-  background-color: cornflowerblue;
+.contacts {
+  margin: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Media queries for reponsive design */
+
+@media only screen and (max-width: 992px) {
+  
+  header {
+    height: 30px;
+  }
+
+  #me {
+    text-align: center;
+    width: 50%;
+  }
+
+  #me h1 {
+    font-size: 30px;
+  }
+
+  .navigation {
+    visibility: hidden;
+  }
+
+  #avatar {
+    visibility: hidden;
+    width: 10px;
+  }
+
+  .hero-banner {
+    visibility: hidden;
+    height: 0px;
+  }
+
+  #aboutMe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "aboutTitle"
+    "aboutText"
+  }
+
+  #work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "workTitle"
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "project5"
+  }
+
+  #contactMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "contactTitle contactTitle contactTitle" 
+      "contact1 contact2 contact3"
+  }
+
+  #aboutTitle, #workTitle, #contactTitle{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
