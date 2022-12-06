@@ -116,9 +116,6 @@ nav {
 
 #aboutMe {
   grid-area: aboutMe;
-  
-  /* background-color: red; */
-  
   display: grid;
   grid-template-columns: 25% 1fr;
   grid-template-rows: 1fr;
@@ -133,8 +130,6 @@ nav {
   border-right: 10px solid white;
   display: flex;
   justify-content: flex-end;
-
-  /* background-color: green; */
 }
 
 #aboutText {
@@ -142,9 +137,6 @@ nav {
   margin: 10px;
   padding: 20px;
   color: white;
-
-  /* background-color: orange; */
-
 }
 
 /* Work section styles */
@@ -167,8 +159,6 @@ nav {
   border-right: 10px solid white;
   display: flex;
   justify-content: flex-end;
-
-  /* background-color: pink; */
 }
 
 #project1 {
@@ -238,9 +228,6 @@ nav {
 
 #contactMe {
   grid-area: contactMe;
-  
-  background-color: blue;
-
   display: grid;
   grid-template-columns: 25% 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -255,27 +242,25 @@ nav {
   border-right: 10px solid white;
   display: flex;
   justify-content: flex-end;
-
-  background-color: bisque;
 }
 
 #contact1 {
   grid-area: contact1;
-  margin: 10px;
-
-  background-color: blueviolet;
 }
 
 #contact2 {
   grid-area: contact2;
-  margin: 10px;
-
-  background-color: cadetblue;
 }
 
 #contact3 {
   grid-area: contact3;
-  margin: 10px;
+}
 
-  background-color: cornflowerblue;
+.contacts {
+  margin: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
